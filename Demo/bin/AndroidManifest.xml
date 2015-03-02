@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.moreapp.demo"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="15" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.moreapp.demo.SignUpAndSignIn"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.moreapp.demo.MainActivity"
+            android:label="@string/title_activity_main" >
+        </activity>
+        <activity
+            android:name="com.moreapp.demo.ViewProfileActivity"
+            android:label="@string/title_activity_view_profile" >
+        </activity>
+        <activity
+            android:name="com.moreapp.demo.SignUp"
+            android:label="@string/title_activity_sign_up" >
+        </activity>
+        <activity
+            android:name="com.moreapp.demo.SignIn"
+            android:label="@string/title_activity_sign_in" >
+        </activity>
+        <activity
+            android:name="com.moreapp.demo.Front"
+            android:label="@string/title_activity_front" >
+        </activity>
+        <activity
+            android:name="com.moreapp.demo.ProfileList"
+            android:label="@string/title_activity_profile_list" >
+        </activity>
+        <activity
+            android:name="com.moreapp.demo.ProfileDetails"
+            android:label="@string/title_activity_profile_details" >
+        </activity>
+        <activity
+            android:name="com.moreapp.demo.DatePickerFragment"
+            android:label="@string/title_activity_date_picker_fragment" >
+        </activity>
+        <activity
+            android:name="com.moreapp.demo.Layout5"
+            android:label="@string/title_activity_layout5" >
+        </activity>
+        <activity
+            android:name="com.moreapp.demo.AddMedicalRecord"
+            android:label="@string/title_activity_add_medical_record" >
+        </activity>
+        <activity
+            android:name="com.moreapp.demo.AddProfile"
+            android:label="@string/title_activity_add_profile" >
+        </activity>
+        <activity
+            android:name="com.moreapp.demo.ViewDoctor"
+            android:label="@string/title_activity_view_doctor" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="Fragment" />
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyAoA-rM37vItlvnzY3KoMlCLArE6uek4UU" />
+
+        <activity
+            android:name="com.moreapp.demo.SearchContact"
+            android:label="@string/title_activity_search_contact" >
+        </activity>
+        <activity
+            android:name="com.moreapp.demo.GroupMessage"
+            android:label="@string/title_activity_group_message" >
+        </activity>
+        <activity
+            android:name="com.moreapp.demo.GroupSettings"
+            android:label="@string/title_activity_group_settings" >
+        </activity>
+        <activity
+            android:name="com.moreapp.demo.SearchGroup"
+            android:label="@string/title_activity_search_group" >
+        </activity>
+        <activity
+            android:name="com.moreapp.demo.AddReminder"
+            android:label="@string/title_activity_add_reminder" >
+        </activity>
+
+        <receiver android:name="com.moreapp.demo.AlarmReceiver" >
+        </receiver>
+
+        <activity
+            android:name="com.moreapp.demo.UpdateReminder"
+            android:label="@string/title_activity_update_reminder" >
+        </activity>
+        <activity
+            android:name="com.moreapp.demo.ContactMessage"
+            android:label="@string/title_activity_contact_message" >
+        </activity>
+        <activity
+            android:name="com.moreapp.demo.Payment"
+            android:label="@string/title_activity_payment" >
+        </activity>
+        <activity
+            android:name="com.moreapp.demo.Settings"
+            android:label="@string/title_activity_settings" >
+        </activity>
+        <activity
+            android:name="com.moreapp.demo.PopupAlarm"
+            android:label="@string/title_activity_popup_alarm" >
+        </activity>
+        <activity
+            android:name="com.moreapp.demo.PopUpAlarm"
+            android:label="@string/title_activity_pop_up_alarm" >
+        </activity>
+        <activity
+            android:name="com.moreapp.demo.AlertAlarmActivity"
+            android:excludeFromRecents="true"
+            android:label="@string/title_activity_alert_alarm"
+            android:launchMode="singleInstance"
+            android:taskAffinity=""
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="com.moreapp.demo.TermsAndPrivacy"
+            android:label="@string/title_activity_terms_and_privacy" >
+        </activity>
+        <activity
+            android:name="com.moreapp.demo.Privacy"
+            android:label="@string/title_activity_privacy" >
+        </activity>
+        <activity
+            android:name="com.moreapp.demo.Terms"
+            android:label="@string/title_activity_terms" >
+        </activity>
+    </application>
+
+</manifest>

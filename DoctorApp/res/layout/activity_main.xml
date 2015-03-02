@@ -1,0 +1,152 @@
+<com.moreapp.doctorapp.MainLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/RelativeLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/grey"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout4"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+             >
+
+            <ImageView
+                android:id="@+id/profile_pic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/user" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/profile_pic"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+                android:text="Doctor Name"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+        <View
+            android:id="@+id/view1"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/RelativeLayout4"
+            android:background="@color/light_grey" />
+
+        <ListView
+            android:id="@+id/menu_listview"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/view1"
+            android:background="@color/grey"
+            android:divider="@color/light_grey"
+            android:dividerHeight="1dp" >
+        </ListView>
+
+        <ListView
+            android:id="@+id/menu_listview2"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:background="@color/grey"
+            android:divider="@color/light_grey"
+            android:dividerHeight="1dp" >
+        </ListView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/RelativeLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <!-- This acts as Actionbar -->
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal"
+            android:background="@color/blue1" >
+
+            <ImageButton
+                android:id="@+id/ImageButton1"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:onClick="toggleMenu"
+                android:src="@drawable/more" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:background="@color/grey" />
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/bell"
+                android:onClick="viewNotifications"
+                android:background="@null" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="55dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/textbubble" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="30dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="58dp"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:text="99"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+        <!-- This is where fragment will show up -->
+
+        <FrameLayout
+            android:id="@+id/activity_main_content_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/RelativeLayout1"
+             >
+        </FrameLayout>
+    </RelativeLayout>
+
+</com.moreapp.doctorapp.MainLayout>

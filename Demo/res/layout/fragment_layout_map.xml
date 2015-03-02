@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </com.google.android.gms.maps.MapView>
+
+    <LinearLayout
+        android:id="@+id/layoutButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/black"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/pin3" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:text="HOSPITAL"
+            android:textColor="@color/white"
+            android:textSize="10dp" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/layoutButton2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="100dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/pin3" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:text="CONTACT"
+            android:textColor="@color/black"
+            android:textSize="10dp" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/layoutButton3"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="180dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/pin3" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:text="EMERGENCY"
+            android:textColor="@color/black"
+            android:textSize="10dp" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/white"
+        android:src="@drawable/listview" />
+
+    <SlidingDrawer
+        android:id="@+id/slidingDrawer1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="60dp"
+        android:rotation="180"
+        android:content="@+id/content"
+        android:handle="@+id/handle" >
+
+        <Button
+            android:id="@+id/handle"
+            android:layout_width="0dp"
+            android:layout_height="0dp" />
+
+        <RelativeLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:rotation="180"
+            android:background="@drawable/bg" >
+
+            <ListView
+                android:id="@+id/listView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/white"
+    			android:dividerHeight="1dp" >
+                
+            </ListView>
+
+        </RelativeLayout>
+    </SlidingDrawer>
+
+</RelativeLayout>

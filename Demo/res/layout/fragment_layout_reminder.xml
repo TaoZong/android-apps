@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white" >
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/white"
+            android:src="@drawable/add" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/imageButton1"
+            android:background="@color/light_grey" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignBottom="@+id/RelativeLayout1"
+        android:layout_alignParentLeft="true"
+        android:background="@color/light_grey" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/RelativeLayout1"
+        android:background="@color/grey" >
+
+        <ListView
+            android:id="@+id/listView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp" >
+        </ListView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

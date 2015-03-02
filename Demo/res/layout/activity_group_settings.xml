@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GroupSettings"
+    android:background="@color/white" >
+    
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/back2"
+        android:background="@color/white" />
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_alignLeft="@+id/imageButton1"
+        android:layout_alignRight="@+id/switch1"
+        android:layout_below="@+id/switch1" >
+
+    </ListView>
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/imageButton1"
+        android:layout_marginRight="10dp"
+        android:text="Open for joining" />
+
+</RelativeLayout>

@@ -1,0 +1,193 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.moreapp.doctorapp.ActivityCurrentCase"
+    tools:ignore="MergeRootFrame" >
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/blue1" >
+
+            <ImageButton
+                android:id="@+id/ImageButton1"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@color/blue1"
+                android:src="@drawable/larrow" />
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:layout_alignParentRight="true"
+                android:background="@color/green"
+                android:text="Accept"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/relativeLayout1" >
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="show pdf" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/tran_blue" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/white" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Acceptence Confirmation"
+                android:textColor="@color/blue1"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView2"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="16dp"
+                android:text="Cancel"
+                android:background="@color/light_grey" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/button2"
+                android:layout_alignRight="@+id/textView2"
+                android:text="Confirm"
+                android:textColor="@color/white"
+                android:background="@color/blue1" />
+            
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp" >
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout6"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="@color/green" >
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/confirm" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageView3"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:text="Accepted Successfully"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/relativeLayout6"
+				android:background="@color/white" >
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:text="Case has been added to"
+                    android:textColor="@color/green"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView4"
+                    android:layout_centerHorizontal="true"
+                    android:text="Current Case panel"
+                    android:textColor="@color/green"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayout5"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="26dp"
+            android:text="Tap to close"
+            android:textColor="@color/white"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </RelativeLayout>
+
+</FrameLayout>

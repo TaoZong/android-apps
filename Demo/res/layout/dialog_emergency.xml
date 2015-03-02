@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Slide to right to turn on emergency alert"
+        android:textColor="@color/white"
+        android:textSize="12dp" />
+
+    <com.moreapp.demo.MySlipSwitch
+        android:id="@+id/slideButton"
+        android:layout_width="0px"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/slideButton"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:text="Done"
+        android:textSize="10dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_below="@+id/slideButton"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:text="Cancel"
+        android:textSize="10dp" />
+
+</RelativeLayout>

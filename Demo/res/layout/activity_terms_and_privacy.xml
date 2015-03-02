@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.moreapp.demo.TermsAndPrivacy"
+    tools:ignore="MergeRootFrame" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/light_grey" >
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/light_grey"
+            android:src="@drawable/back2" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/logo" />
+    </RelativeLayout>
+
+    <android.support.v4.app.FragmentTabHost
+        android:id="@+id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativeLayout2" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:id="@+id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="45dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp" >
+            </FrameLayout>
+        </LinearLayout>
+    </android.support.v4.app.FragmentTabHost>
+
+</RelativeLayout>

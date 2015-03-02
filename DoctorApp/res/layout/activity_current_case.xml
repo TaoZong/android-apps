@@ -1,0 +1,190 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.moreapp.doctorapp.ActivityCurrentCase"
+    tools:ignore="MergeRootFrame" >
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/blue1" >
+
+            <ImageButton
+                android:id="@+id/ImageButton1"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@color/blue1"
+                android:src="@drawable/larrow" />
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:background="@color/grey"
+                android:text="Drop"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="80dp"
+            android:background="@color/light_grey" >
+
+            <ScrollView
+                android:id="@+id/ScrollView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/light_grey" >
+
+                <LinearLayout
+                    android:id="@+id/LinearLayoutScroll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                </LinearLayout>
+            </ScrollView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true" >
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="@color/grey" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="40dp"
+                android:src="@drawable/comment" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40dp"
+                android:text="Write a comment"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/tran_blue" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/white" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="You are attempting to drop this case.\nAre you sure this is what you want?" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView2"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="16dp"
+                android:background="@color/light_grey"
+                android:text="Do not drop" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/button2"
+                android:layout_alignRight="@+id/textView2"
+                android:background="@color/grey"
+                android:text="Drop"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/grey" >
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="This message serves as a confirmation\nthat you have successfullly dropped the"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/textView3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:background="@color/black"
+                android:gravity="center"
+                android:text="Case #123"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayout5"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="26dp"
+            android:text="Tap to close"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+</FrameLayout>
